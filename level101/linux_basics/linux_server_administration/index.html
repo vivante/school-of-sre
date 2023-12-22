@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://linkedin.github.io/school-of-sre/level101/linux_basics/linux_server_administration/">
       
       <link rel="shortcut icon" href="../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -1027,23 +1027,13 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-7" type="checkbox" id="nav-2-3-1-7" >
-      
-      <label class="md-nav__link" for="nav-2-3-1-7">
+    <li class="md-nav__item">
+      <a href="../../databases_sql/operations/" class="md-nav__link">
         Operational Concepts
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Operational Concepts" data-md-level="4">
-        <label class="md-nav__title" for="nav-2-3-1-7">
-          <span class="md-nav__icon md-icon"></span>
-          Operational Concepts
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+      </a>
+    </li>
+  
+
           
             
   
@@ -1065,12 +1055,6 @@
       <a href="../../databases_sql/query_performance/" class="md-nav__link">
         Query Performance
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -1180,11 +1164,75 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-3" type="checkbox" id="nav-2-3-3" >
       
       <label class="md-nav__link" for="nav-2-3-3">
+        Message Queue
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Message Queue" data-md-level="3">
+        <label class="md-nav__title" for="nav-2-3-3">
+          <span class="md-nav__icon md-icon"></span>
+          Message Queue
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../messagequeue/intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../messagequeue/key_concepts/" class="md-nav__link">
+        Key Concepts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../messagequeue/further_reading/" class="md-nav__link">
+        Conclusion
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-4" type="checkbox" id="nav-2-3-4" >
+      
+      <label class="md-nav__link" for="nav-2-3-4">
         Big Data
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Big Data" data-md-level="3">
-        <label class="md-nav__title" for="nav-2-3-3">
+        <label class="md-nav__title" for="nav-2-3-4">
           <span class="md-nav__icon md-icon"></span>
           Big Data
         </label>
@@ -2802,21 +2850,21 @@ not find the entry for that user in "/etc/passwd" or "/etc/shadow" file.</p>
 <table>
 <thead>
 <tr>
-<th>groupadd \&lt;group_name></th>
+<th>groupadd \&lt;group_name&gt;</th>
 <th>Creates a new group</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>groupmod \&lt;group_name></td>
+<td>groupmod \&lt;group_name&gt;</td>
 <td>Modifies attributes of a group</td>
 </tr>
 <tr>
-<td>groupdel \&lt;group_name></td>
+<td>groupdel \&lt;group_name&gt;</td>
 <td>Deletes a group</td>
 </tr>
 <tr>
-<td>gpasswd \&lt;group_name></td>
+<td>gpasswd \&lt;group_name&gt;</td>
 <td>Modifies password for group</td>
 </tr>
 </tbody>
@@ -2964,7 +3012,7 @@ in the similar way.</p>
 <h3 id="chown-command">Chown command</h3>
 <p>The chown command is used to change the owner of files or
 directories in Linux.</p>
-<p>Command syntax: chown \&lt;new_owner> \&lt;file_name></p>
+<p>Command syntax: chown \&lt;new_owner&gt; \&lt;file_name&gt;</p>
 <p><img alt="" src="../images/linux/admin/image6.png" /></p>
 <p><strong>In case, we do not have sudo privileges, we need to use sudo
 command</strong>. Let's switch to user 'shivam' and try changing the owner. We
@@ -3029,10 +3077,10 @@ host.</p>
 </li>
 </ol>
 <h3 id="how-to-run-commands-on-a-remote-host">How to run commands on a remote host ?</h3>
-<p>General syntax: ssh \&lt;user>@\&lt;hostname/hostip> \&lt;command></p>
+<p>General syntax: ssh \&lt;user&gt;@\&lt;hostname/hostip&gt; \&lt;command&gt;</p>
 <p><img alt="" src="../images/linux/admin/image14.png" /></p>
 <h3 id="how-to-transfer-files-from-one-host-to-another-host">How to transfer files from one host to another host ?</h3>
-<p>General syntax: scp \&lt;source> \&lt;destination></p>
+<p>General syntax: scp \&lt;source&gt; \&lt;destination&gt;</p>
 <p><img alt="" src="../images/linux/admin/image32.png" /></p>
 <h2 id="package-management">Package Management</h2>
 <p>Package management is the process of installing and managing software on
@@ -3067,19 +3115,19 @@ systems.</p>
 </thead>
 <tbody>
 <tr>
-<td>yum install \&lt;package_name></td>
+<td>yum install \&lt;package_name&gt;</td>
 <td>Installs a package on your system</td>
 </tr>
 <tr>
-<td>yum update \&lt;package_name></td>
+<td>yum update \&lt;package_name&gt;</td>
 <td>Updates a package to it's latest available version</td>
 </tr>
 <tr>
-<td>yum remove \&lt;package_name></td>
+<td>yum remove \&lt;package_name&gt;</td>
 <td>Removes a package from your system</td>
 </tr>
 <tr>
-<td>yum search \&lt;keyword></td>
+<td>yum search \&lt;keyword&gt;</td>
 <td>Searches for a particular keyword</td>
 </tr>
 </tbody>

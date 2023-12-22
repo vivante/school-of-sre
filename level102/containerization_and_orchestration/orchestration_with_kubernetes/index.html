@@ -12,7 +12,7 @@
         <link rel="canonical" href="https://linkedin.github.io/school-of-sre/level102/containerization_and_orchestration/orchestration_with_kubernetes/">
       
       <link rel="shortcut icon" href="../../../img/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.8">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-6.2.8">
     
     
       
@@ -704,23 +704,13 @@
   
   
   
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-1-7" type="checkbox" id="nav-2-3-1-7" >
-      
-      <label class="md-nav__link" for="nav-2-3-1-7">
+    <li class="md-nav__item">
+      <a href="../../../level101/databases_sql/operations/" class="md-nav__link">
         Operational Concepts
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Operational Concepts" data-md-level="4">
-        <label class="md-nav__title" for="nav-2-3-1-7">
-          <span class="md-nav__icon md-icon"></span>
-          Operational Concepts
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
+      </a>
+    </li>
+  
+
           
             
   
@@ -742,12 +732,6 @@
       <a href="../../../level101/databases_sql/query_performance/" class="md-nav__link">
         Query Performance
       </a>
-    </li>
-  
-
-          
-        </ul>
-      </nav>
     </li>
   
 
@@ -857,11 +841,75 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-3" type="checkbox" id="nav-2-3-3" >
       
       <label class="md-nav__link" for="nav-2-3-3">
+        Message Queue
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Message Queue" data-md-level="3">
+        <label class="md-nav__title" for="nav-2-3-3">
+          <span class="md-nav__icon md-icon"></span>
+          Message Queue
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../level101/messagequeue/intro/" class="md-nav__link">
+        Introduction
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../level101/messagequeue/key_concepts/" class="md-nav__link">
+        Key Concepts
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../level101/messagequeue/further_reading/" class="md-nav__link">
+        Conclusion
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3-4" type="checkbox" id="nav-2-3-4" >
+      
+      <label class="md-nav__link" for="nav-2-3-4">
         Big Data
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Big Data" data-md-level="3">
-        <label class="md-nav__title" for="nav-2-3-3">
+        <label class="md-nav__title" for="nav-2-3-4">
           <span class="md-nav__icon md-icon"></span>
           Big Data
         </label>
@@ -2268,7 +2316,7 @@
 <p><img alt="Kubernetes Architecture" src="../images/kubernetes.png" /></p>
 <p>Kubernetes components can be divided into two parts: <a href="https://kubernetes.io/docs/concepts/overview/components/#control-plane-components">control plane components</a> and <a href="https://kubernetes.io/docs/concepts/overview/components/#node-components">data plane components</a>. </p>
 <p>A Kubernetes cluster consists of 1 or more host machines (called nodes) where the containers managed by Kubernetes are run. This constitutes the data plane (or node plane). </p>
-<p>The brain of Kuberentes which responds to events from the node plane (e.g create a pod, replicas mismatch) and does the main orchestration is called the control plane. All control plane components are typically installed in a master node. This master node does not run any user containers.</p>
+<p>The brain of Kubernetes which responds to events from the node plane (e.g create a pod, replicas mismatch) and does the main orchestration is called the control plane. All control plane components are typically installed in a master node. This master node does not run any user containers.</p>
 <p>The Kubernetes components themselves are run as containers wrapped in Pods (which is the most basic kubernetes resource object).</p>
 <ul>
 <li>Control plane components:</li>
@@ -2306,8 +2354,8 @@
 </ul>
 <h2 id="lab">LAB</h2>
 <h3 id="prerequisites">Prerequisites</h3>
-<p>The best way to start this exercise is to use a <a href="https://www.katacoda.com/courses/kubernetes/playground">Katacoda kubernetes playground</a>. A single node kubernetes cluster is already set up for you here for quick experimentation. You can also use this to play with docker.</p>
-<p>The environment gets torn down after 10 mins. So make sure that you save your files if you want to resume them. For persistent kubernetes clusters, you can set it up either in your local (using <a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a>) or you can create a <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal">kubernetes cluster in Azure</a>, GCP or any other cloud provider.</p>
+<p>The best way to start this exercise is to use a <a href="https://labs.play-with-k8s.com/">Play with kubernetes lab</a>. </p>
+<p>The environment gets torn down after 4 hours. So make sure that you save your files if you want to resume them. For persistent kubernetes clusters, you can set it up either in your local (using <a href="https://minikube.sigs.k8s.io/docs/start/">minikube</a>) or you can create a <a href="https://docs.microsoft.com/en-us/azure/aks/kubernetes-walkthrough-portal">kubernetes cluster in Azure</a>, GCP or any other cloud provider.</p>
 <p>Knowledge of YAML is nice to have for understanding the manifest files.</p>
 <h3 id="hands-on">Hands-on</h3>
 <h4 id="lab-1">Lab 1:</h4>
@@ -2364,7 +2412,6 @@ spec:                           #[6]
 </li>
 </ul>
 <p>A container is created within the pod but the pod is the same. You can verify by checking the pod start time in describe command. It would show a much older time.</p>
-<p>You can actually see the nginx container by doing <code>docker ps</code> on the node01 terminal (if you’re using Katacoda).</p>
 <p>What if we want to change the image to 1.20.1 for 1000 nginx pods? Stepping a little back, what if we want to create 1000 nginx pods. Of course, we can write a script but Kubernetes already offers a resource type called “deployment” to manage large scale deployments better.</p>
 <hr />
 <h4 id="lab-2">Lab 2:</h4>
@@ -2423,13 +2470,12 @@ Also, the labels in matchLabels should be the same as labels under <code>#[4]</c
 <p><img alt="" src="../images/kube9.png" /></p>
 <p>Curl the IP corresponding to 10.96.114.184. This curl request reaches one of the 10 pods in the deployment “nginx-deployment” in a round robin fashion. What happens when we execute the <code>expose</code> command is that a kubernetes <code>Service</code> is created of type Cluster IP so that all the pods behind this service are accessible through a single local IP (10.96.114.184, here).</p>
 <p>It is possible to have a public IP instead (i.e an actual external load balancer) by creating a Service of type <a href="https://kubernetes.io/docs/tasks/access-application-cluster/create-external-load-balancer/">LoadBalancer</a>. Do feel free to play around with it!</p>
-<p>The above exercises a pretty good exposure to using Kubernetes to manage large scale deployments. Trust me, the process is very similar to the above for operating 1000 deployments and containers too! While a Deployment object is good enough for managing stateless applications, Kuberenetes provides other resources like Job, Daemonset, Cronjob, Statefulset etc. to manage special use cases. </p>
+<p>The above exercises a pretty good exposure to using Kubernetes to manage large scale deployments. Trust me, the process is very similar to the above for operating 1000 deployments and containers too! While a Deployment object is good enough for managing stateless applications, Kubernetes provides other resources like Job, Daemonset, Cronjob, Statefulset etc. to manage special use cases. </p>
 <p><strong>eAdditional labs:</strong>
-https://www.katacoda.com/lizrice/scenarios/kube-web
-https://www.katacoda.com/courses/kubernetes (Huge number of free follow-along exercises to play with Kubernetes)</p>
+https://kubernetes.courselabs.co/ (Huge number of free follow-along exercises to play with Kubernetes)</p>
 <h2 id="advanced-topics">Advanced topics</h2>
 <p>Most often than not, microservices orchestrated with Kubernetes contain dozens of instances of resources like deployment, services and configs. The manifests for these applications can be auto- generated with Helm templates and passed on as Helm charts. Similar to how we have PiPy for python packages there are remote repositories like Bitnami where Helm charts (e.g for setting up a production-ready Prometheus or Kafka with a single click) can be downloaded and used. <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-helm-the-package-manager-for-kubernetes">This is a good place to begin</a>.</p>
-<p>Kuberenetes provides the flexibility to create our custom resources (similar to Deployment or the Pod which we saw). For instance, if you want to create 5 instances of a resource with kind as  SchoolOfSre you can! The only thing is that you have to write your custom resource for it. You can also build a custom operator for your custom resource to take certain actions on the resource instance. You can check <a href="https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator">here</a> for more information.</p>
+<p>Kubernetes provides the flexibility to create our custom resources (similar to Deployment or the Pod which we saw). For instance, if you want to create 5 instances of a resource with kind as  SchoolOfSre you can! The only thing is that you have to write your custom resource for it. You can also build a custom operator for your custom resource to take certain actions on the resource instance. You can check <a href="https://www.redhat.com/en/topics/containers/what-is-a-kubernetes-operator">here</a> for more information.</p>
                 
               
               
